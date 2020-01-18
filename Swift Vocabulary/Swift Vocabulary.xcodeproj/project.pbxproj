@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		6D88EA1E23D29594008D011F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA1D23D29594008D011F /* AppDelegate.swift */; };
 		6D88EA2023D29594008D011F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA1F23D29594008D011F /* SceneDelegate.swift */; };
-		6D88EA2223D29594008D011F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA2123D29594008D011F /* ViewController.swift */; };
 		6D88EA2523D29594008D011F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EA2323D29594008D011F /* Main.storyboard */; };
 		6D88EA2723D2959D008D011F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EA2623D2959D008D011F /* Assets.xcassets */; };
 		6D88EA2A23D2959D008D011F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EA2823D2959D008D011F /* LaunchScreen.storyboard */; };
 		6D88EA3523D2959E008D011F /* Swift_VocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA3423D2959E008D011F /* Swift_VocabularyTests.swift */; };
 		6D88EA4023D2959E008D011F /* Swift_VocabularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA3F23D2959E008D011F /* Swift_VocabularyUITests.swift */; };
 		6D88EA4E23D2966F008D011F /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA4D23D2966F008D011F /* WordsTableViewController.swift */; };
+		6D88EA5023D2A206008D011F /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA4F23D2A206008D011F /* DefinitionViewController.swift */; };
+		6D88EA5223D2A5E5008D011F /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EA5123D2A5E5008D011F /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		6D88EA1A23D29594008D011F /* Swift Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Vocabulary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D88EA1D23D29594008D011F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D88EA1F23D29594008D011F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6D88EA2123D29594008D011F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D88EA2423D29594008D011F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D88EA2623D2959D008D011F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D88EA2923D2959D008D011F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		6D88EA3F23D2959E008D011F /* Swift_VocabularyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_VocabularyUITests.swift; sourceTree = "<group>"; };
 		6D88EA4123D2959E008D011F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D88EA4D23D2966F008D011F /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6D88EA4F23D2A206008D011F /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		6D88EA5123D2A5E5008D011F /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,13 @@
 			children = (
 				6D88EA1D23D29594008D011F /* AppDelegate.swift */,
 				6D88EA1F23D29594008D011F /* SceneDelegate.swift */,
-				6D88EA2123D29594008D011F /* ViewController.swift */,
 				6D88EA2323D29594008D011F /* Main.storyboard */,
 				6D88EA2623D2959D008D011F /* Assets.xcassets */,
 				6D88EA2823D2959D008D011F /* LaunchScreen.storyboard */,
 				6D88EA2B23D2959D008D011F /* Info.plist */,
 				6D88EA4D23D2966F008D011F /* WordsTableViewController.swift */,
+				6D88EA4F23D2A206008D011F /* DefinitionViewController.swift */,
+				6D88EA5123D2A5E5008D011F /* VocabularyWord.swift */,
 			);
 			path = "Swift Vocabulary";
 			sourceTree = "<group>";
@@ -262,10 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D88EA2223D29594008D011F /* ViewController.swift in Sources */,
 				6D88EA1E23D29594008D011F /* AppDelegate.swift in Sources */,
 				6D88EA2023D29594008D011F /* SceneDelegate.swift in Sources */,
+				6D88EA5223D2A5E5008D011F /* VocabularyWord.swift in Sources */,
 				6D88EA4E23D2966F008D011F /* WordsTableViewController.swift in Sources */,
+				6D88EA5023D2A206008D011F /* DefinitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
